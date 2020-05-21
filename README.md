@@ -32,3 +32,18 @@ When the DATABASE is ready, run:
 docker stop -t 600 oracle-custom
 docker commit -m "Creating custom image of Oracle for 3scale/porta" oracle-custom quay.io/3scale/oracle:19.3.0-ee-ci-prebuilt
 ```
+
+
+## What is inside this image?
+
+The quay.io/3scale/oracle:19.3.0-ee-ci-prebuilt contains 3 prebuilt PDBs
+
+- systempdb
+- systempdbtest
+- systempdbproduction
+
+
+The default created users are:
+
+- Regular user: username=rails and password=railspass
+- SYSTEM user:  username=SYSTEM and password=threescalepass
