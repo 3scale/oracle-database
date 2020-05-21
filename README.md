@@ -18,15 +18,15 @@ cd docker-images/OracleDatabase/SingleInstance/dockerfiles/
 ./buildDockerImage.sh -e -v 19.3.0
 ```
 
-This will create an image called `oracle:19.3.0`, we need this image image to create our custom image:
+This will create an image called `oracle/database:19.3.0`, we need this image image to create our custom image:
 
-Run:
+Run in this repository and watch the logs to see when the database is ready:
 
 ```
 oracle/build-image.sh
 ```
 
-When the DATABASE is ready do:
+When the DATABASE is ready, run:
 
 ```
 docker stop -t 600 oracle-custom
