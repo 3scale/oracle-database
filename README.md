@@ -33,6 +33,13 @@ docker stop -t 600 oracle-custom
 docker commit -m "Creating custom image of Oracle for 3scale/porta" oracle-custom quay.io/3scale/oracle:19.3.0-ee-ci-prebuilt
 ```
 
+Now, it is time to push the image to Quay.io repo: 
+
+```
+docker login quay.io
+docker push quay.io/3scale/oracle:19.3.0-ee-ci-prebuilt
+```
+
 
 ## What is inside this image?
 
